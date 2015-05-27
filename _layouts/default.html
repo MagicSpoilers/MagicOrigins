@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>{{ page.title }}</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta property="fb:app_id" content="816113395131025">
+      <link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
+      <link rel="stylesheet" href="{{ site.baseurl }}/css/foundation.css" />
+      <link rel="stylesheet" href="{{ site.baseurl }}/css/style.css" />
+
+      <script src="{{ site.baseurl }}/js/vendor/modernizr.js"></script>
+      <script src="{{ site.baseurl }}/js/vendor/jquery.js"></script>
+      <script src="{{ site.baseurl }}/js/foundation.min.js"></script>
+    </head>
+    <body>
+      <nav class="fixed">
+        <div class="row">
+          <a id="pageTitle" href="{{ site.baseurl }}/" class="columns small-1 medium-4">
+            <span class="show-for-large-up">{{ site.name }}</span>
+            <span class="show-for-medium-only">DoT Mobile</span>
+            <span class="show-for-small-only">DoT</span>
+          </a>
+          <ul id="colorLinks" class="columns small-11 medium-8">
+            <a href="{{ site.baseurl }}/#colorless"><li class="colorlessLink"></li></a>
+            <a href="{{ site.baseurl }}/#multicolored"><li class="multiColoredLink"></li></a>
+            <a href="{{ site.baseurl }}/#green"><li class="greenLink"></li></a>
+            <a href="{{ site.baseurl }}/#red"><li class="redLink"></li></a>
+            <a href="{{ site.baseurl }}/#black"><li class="blackLink"></li></a>
+            <a href="{{ site.baseurl }}/#blue"><li class="blueLink"></li></a>
+            <a href="{{ site.baseurl }}/#white"><li class="whiteLink"></li></a>
+          </ul>
+        </div>
+      </nav>
+
+        <div class="container">
+          <div class="site">
+            <div class="mainBody row">
+              <div id="cardRuler" class="columns small-6 medium-4 large-3"></div>
+              <script src="{{ site.baseurl }}/js/myScript.js"></script>
+                  {{ content }}
+
+            </div>
+          </div>
+        </div> <!-- /container -->
+
+      <script>
+        $(document).foundation();
+      </script>
+      <script src="{{ site.baseurl }}/js/myScript.js"></script>
+    </body>
+</html>
