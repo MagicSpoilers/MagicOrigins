@@ -1,6 +1,6 @@
-name: Dragons of Tarkir Mobile Spoiler
+name: Magic Origins Mobile Spoiler
 markdown: redcarpet
 highlighter: pygments
-baseurl: /DragonsOfTarkirMobileSpoiler
+baseurl: /MagicOrigins
 port: 9001
 permalink: /:categories/:title
