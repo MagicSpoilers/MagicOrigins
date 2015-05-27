@@ -11,11 +11,9 @@ image: "http://media-dominaria.cursecdn.com/avatars/thumbnails/68/145/200/283/63
 image2: "http://media-dominaria.cursecdn.com/avatars/thumbnails/68/144/200/283/635614855195799528.jpeg"
 cost: "<span class='Colorless Mana'>1</span><span class='Black Mana'>B</span><span class='Black Mana'>B</span>"
 flavor: ""
-rules2: '+2: Each player discards a card.
-
--X: Return target nonlegendary creature with converted mana cost X from your graveyard to the battlefield.
-
--8: You get an emblem with "Whenever a creature you control dies, return it to the battlefield under your control at the beginning of the next end step."'
+rules2: '<p>+2: Each player discards a card.</p>
+<p>-X: Return target nonlegendary creature with converted mana cost X from your graveyard to the battlefield.</p>
+<p>-8: You get an emblem with "Whenever a creature you control dies, return it to the battlefield under your control at the beginning of the next end step."</p>'
 ---
 
 Lifelink

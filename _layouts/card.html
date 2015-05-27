@@ -39,6 +39,36 @@ layout: default
 		</div>
 	</div>
 </div>
+{% if page.title2 %}
+	{% if page.image2 %}
+		{% if page.image2 contains 'http:' %}
+				<img class="columns small-12 medium-4 large-3" src="{{ page.image2 }}">
+		{% else %}
+				<img class="columns small-12 medium-4 large-3" src="{{ site.baseurl }}/img/{{ page.image2 }}">
+		{% endif %}
+	{% endif %}
+	<div class="columns small-12 medium-4 large-3">
+		<div class="cardwrapper">
+			<div class="cardBorder {{ page.color }}">
+				<div class="TitleCostRow">
+					<div class="title">{{ page.title2 }}</div>
+				</div>
+				<div class="TypeRarityRow">
+					<div class="type">{{ page.type2 }}</div><div class="rarity">{{ page.rarity }}</div>
+				</div>
+				<div class="RulesFlavorRow">
+					<div class="rulesContent">
+						<div class="rules">{{ page.rules2 }}</div>
+						<em>{{ page.flavor }}</em>
+					</div>
+				</div>
+				{% if page.attack %}
+					<div class="attack">{{ page.attack2 }}</div>
+				{% endif %}
+			</div>
+		</div>
+	</div>
+{% endif %}
 <div class="columns small-12 medium-4 large-6 end"> 
 	<div class="fb-comments" data-width="100%" data-href="http://magicspoilers.github.io{{ site.baseurl }}{{ page.url }}" data-numposts="5" data-colorscheme="light"></div>
 </div>

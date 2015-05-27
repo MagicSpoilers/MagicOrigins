@@ -37,4 +37,34 @@ title: Magic Origins Mobile Spoiler
 			</div>
 		</a>
 	</div>
+	{% if card.title2 %}
+	<div class="aCard columns small-6 medium-4 large-3">
+		<a href="{{ site.baseurl }}/{{ card.url }}">
+			<div class="cardwrapper">
+				{% if card.image2 %}
+					{% if card.image2 contains 'http:' %}
+			  			<input type="hidden" value="{{ card.image2 }}">
+					{% else %}
+			  			<input type="hidden" value="{{ site.baseurl }}/img/{{ card.image2 }}">
+					{% endif %}
+				{% endif %}
+				<div class="cardBorder {{ card.color }}">
+					<div class="TitleCostRow">
+						<div class="title">{{ card.title2 }}</div>
+					</div>
+					<div class="TypeRarityRow">
+						<div class="type">{{ card.type2 }}</div><div class="rarity">{{ card.rarity }}</div>
+					</div>
+					<div class="RulesFlavorRow">
+						<div class="rulesContent">
+							<div class="rules">{{ card.rules2 }}</div>
+							<em class="flavor">{{ card.flavor2 }}</em>
+						</div>
+					</div>
+					{% if card.attack2 %}<div class="attack">{{ card.attack2 }}</div>{% endif %}
+				</div>
+			</div>
+		</a>
+	</div>
+	{% endif %}
 {% endfor %}
