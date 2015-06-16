@@ -5,7 +5,7 @@ color: "white"
 categories: creature white
 type: "Legendary Creature - Human Soldier"
 rarity: "R"
-attack: "?/?"
+attack: "4/4"
 image: "hixusprisonwarden.jpg"
 cost: "<span class='Colorless Mana'>3</span><span class='White Mana'>W</span><span class='White Mana'>W</span>"
 flavor: ""
